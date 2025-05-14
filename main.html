@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>главная</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "/test_js_request", true);
+    xhr.setRequestHeader("Cookie", document.cookie);
+    xhr.onload = () => console.log(xhr.response);
+xhr.send(null);
+</script>
+</html>
