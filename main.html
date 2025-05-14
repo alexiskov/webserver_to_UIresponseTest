@@ -11,7 +11,7 @@
 <script>
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "/test_js_request", true);
-    xhr.setRequestHeader("Cookie", document.cookie);
+    //xhr.setRequestHeader("Cookie", document.cookie);
     xhr.onload = () => console.log(xhr.response);
 xhr.send(null);
 </script>

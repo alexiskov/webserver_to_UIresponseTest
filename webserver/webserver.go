@@ -35,7 +35,7 @@ func router(w http.ResponseWriter, r *http.Request) {
 			http.SetCookie(w, &http.Cookie{
 				Name:     "ssid",
 				Value:    "testCookie_01110",
-				HttpOnly: false,
+				HttpOnly: true,
 			})
 			w.Write(d)
 		}
